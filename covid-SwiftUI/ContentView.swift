@@ -10,7 +10,39 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List {
+                TopInfoView()
+                
+                ForEach(0 ..< 4) { item in
+                    NavigationLink(destination: Text("Coming")) {
+                        HStack {
+                            ZStack {
+                                Circle()
+                                    .foregroundColor(.yellow)
+                                    .frame(width: 44)
+                                
+                                Image(systemName: "staroflife.fill")
+                                    .foregroundColor(.white)
+                            }
+                            .padding(.trailing)
+                            
+                            VStack(alignment: .leading) {
+                                Text("About COVID-19")
+                                    .fontWeight(.bold)
+                                
+                                Text("""
+An up-to-date rundom of the virus
+and its symptoms
+""")
+                            }
+                        }
+                    }
+                }
+            }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
+        }
     }
 }
 
@@ -19,3 +51,11 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+
+
+
+
+
+
