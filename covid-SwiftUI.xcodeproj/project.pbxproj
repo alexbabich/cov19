@@ -19,6 +19,8 @@
 		551314BB2443579700F86C2B /* TopInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551314BA2443579700F86C2B /* TopInfoView.swift */; };
 		551314BD2443598F00F86C2B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551314BC2443598F00F86C2B /* HeaderView.swift */; };
 		551314BF244359B400F86C2B /* TopLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551314BE244359B400F86C2B /* TopLogoView.swift */; };
+		55CA76DD244704C9002CB7CA /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CA76DC244704C9002CB7CA /* MainListView.swift */; };
+		55CA76DF24470F31002CB7CA /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CA76DE24470F31002CB7CA /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		551314BA2443579700F86C2B /* TopInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopInfoView.swift; sourceTree = "<group>"; };
 		551314BC2443598F00F86C2B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		551314BE244359B400F86C2B /* TopLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLogoView.swift; sourceTree = "<group>"; };
+		55CA76DC244704C9002CB7CA /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
+		55CA76DE24470F31002CB7CA /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 				551314A22443489200F86C2B /* Info.plist */,
 				5513149C2443489200F86C2B /* Preview Content */,
 				551314B62443570800F86C2B /* TextInfoView.swift */,
+				55CA76DE24470F31002CB7CA /* AboutView.swift */,
+				55CA76DC244704C9002CB7CA /* MainListView.swift */,
 				551314B82443574F00F86C2B /* TextAndImageInfoView.swift */,
 				551314BA2443579700F86C2B /* TopInfoView.swift */,
 				551314BC2443598F00F86C2B /* HeaderView.swift */,
@@ -227,6 +233,8 @@
 				551314B72443570800F86C2B /* TextInfoView.swift in Sources */,
 				551314BB2443579700F86C2B /* TopInfoView.swift in Sources */,
 				551314BF244359B400F86C2B /* TopLogoView.swift in Sources */,
+				55CA76DF24470F31002CB7CA /* AboutView.swift in Sources */,
+				55CA76DD244704C9002CB7CA /* MainListView.swift in Sources */,
 				551314972443487F00F86C2B /* SceneDelegate.swift in Sources */,
 				551314B92443574F00F86C2B /* TextAndImageInfoView.swift in Sources */,
 				551314992443487F00F86C2B /* ContentView.swift in Sources */,

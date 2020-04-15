@@ -11,11 +11,18 @@ import SwiftUI
 struct TextInfoView: View {
     var body: some View {
         VStack(alignment: .leading) {
-            Text("some strange text like lorem ipsumsome")
+            Text("""
+some strange text like lorem
+ipsumsome like lorem ipsumsome
+""")
+                .lineLimit(2)
                 .padding(.bottom)
-                .lineLimit(nil)
             
-            Text("some strange text like lorem ipsumsome strange text like lorem ipsumsome strange text like lorem ipsumsome strange")
+            Text("""
+some strange text like lorem ipsumsome
+strange text like lorem ipsumsome strange
+text like lorem ipsumsome strange
+""")
         }
         .frame(width: UIScreen.main.bounds.width / 2.5)
 //            .frame(maxWidth: .infinity)
