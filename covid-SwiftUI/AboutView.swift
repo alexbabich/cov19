@@ -55,7 +55,7 @@ struct AboutView: View {
                 .padding()
             }
         }
-        .navigationBarTitle("", displayMode: .inline)
+        .navigationBarTitle("\(aboutData[0].title)")
         .background(Color(.secondarySystemBackground))
     }
 }
@@ -68,13 +68,51 @@ struct AboutView_Previews: PreviewProvider {
     }
 }
 
-
 // new file
 
 struct LearnMoreView: View {
     @Binding var isShowing: Bool
     
     var body: some View {
-        Text("Text coming soon?")
+        ScrollView {
+            HStack {
+                Spacer()
+                Button(action: {
+                    self.isShowing.toggle()
+                }) {
+                    Image(systemName: "xmark.circle.fill")
+                        .font(.largeTitle)
+                        .foregroundColor(Color(.systemGray3))
+                }
+            }
+            .padding([.top, .trailing])
+            HStack {
+                Image(systemName: "waveform.path.ecg")
+                    .font(.largeTitle)
+                    .foregroundColor(Color(.systemTeal))
+                Spacer()
+            }
+            .padding(.horizontal)
+            
+            HStack {
+                Text("Social Distancing")
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
+                    .padding([.leading, .bottom])
+                Spacer()
+            }
+            
+            Text("The main way COVID-19 spreads is between people")
+            
+            HStack {
+                Text("How to")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                    .padding()
+                Spacer()
+            }
+            
+            Text("More Text")
+        }
     }
 }

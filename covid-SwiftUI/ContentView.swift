@@ -9,10 +9,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isShowing = false
+    
     var body: some View {
         NavigationView {
             List {
-                TopInfoView()
+                TopInfoView(isShowing: $isShowing)
+                .sheet(isPresented: $isShowing) {
+                    ResultsView(isShowing: self.$isShowing)
+                }
                 MainListView()
             }
             .navigationBarTitle("")

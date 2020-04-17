@@ -9,12 +9,14 @@
 import SwiftUI
 
 struct TopInfoView: View {
+    @Binding var isShowing: Bool
+    
     var body: some View {
         VStack(alignment: .leading) {
             TopLogoView()
             HeaderView()
             TextAndImageInfoView()
-            VButtons()
+            VButtons(isShowing: $isShowing)
         }
         .padding()
         .background(LinearGradient(gradient: Gradient(colors: [Color(.systemBackground), Color(.systemGray4)]), startPoint: .top, endPoint: .bottom))
@@ -27,11 +29,15 @@ struct TopInfoView: View {
 struct VButtons: View {
     let buttonLabels = ["Start Screening", "View Previous Results"]
     
+    @Binding var isShowing: Bool
+    
     var body: some View {
         VStack {
             ForEach(buttonLabels, id: \.self) { label in
                 Button(action: {
-    //                do stuff
+                    if self.buttonLabels.contains("Results") {
+                        self.isShowing.toggle()
+                    }
                 }) {
                     Text(label)
                         .fontWeight(.bold)

@@ -10,13 +10,22 @@ import SwiftUI
 
 struct MainListView: View {
     let infoCells = [
-        MainCellDdata(image: "staroflife.fill", color: .yellow, title: "About COVID-19", body: """
-    An up-to-date rundom of the virus
-    and its symptoms
-    """, aboutCellData: [AboutCellData(image: "Hi", color: .yellow, title: "What is COVID-19?", previewBody: "Lots of preview text and stuff", body: "Lots more text about stuff")]),
-        MainCellDdata(image: "text.badge.plus", color: .purple, title: "About COVID-19", body: "An up-to-date rundom of the virus and its symptoms", aboutCellData: [AboutCellData(image: "Hi", color: .yellow, title: "What You Can Do?", previewBody: "Same text Lots of preview text and stuff", body: "Lots more text about stuff")]),
-        MainCellDdata(image: "list.bullet.indent", color: .green, title: "COVID-19 Testing", body: "the virusand its symptoms", aboutCellData: [AboutCellData(image: "Hi", color: .yellow, title: "What is COVID-19?", previewBody: "Lots of preview text and stuff", body: "Lots more text about stuff")]),
-        MainCellDdata(image: "app.fill", color: .orange, title: "COVID-19 Testing", body: "the virusand its symptoms", aboutCellData: [AboutCellData(image: "Hi", color: .yellow, title: "What is COVID-19?", previewBody: "Lots of preview text and stuff", body: "Lots more text about stuff")])
+        MainCellDdata(image: "staroflife.fill", color: .yellow, title: "About COVID-19 item 1", body: "An up-to-date rundom of the virus and its symptoms", aboutCellData: [
+            AboutCellData(image: "staroflife.fill", color: .yellow, title: "What is COVID-19?", previewBody: "Lots of preview text and stuff", body: "Lots more text about stuff"),
+            AboutCellData(image: "staroflife.fill", color: .yellow, title: "What is COVID-19?", previewBody: "Lots of preview text and stuff", body: "Lots more text about stuff"),
+            AboutCellData(image: "staroflife.fill", color: .yellow, title: "What is COVID-19?", previewBody: "Lots of preview text and stuff", body: "Lots more text about stuff")]),
+        MainCellDdata(image: "text.badge.plus", color: .green, title: "About COVID-19 item 2", body: "An up-to-date rundom of the virus and its symptoms", aboutCellData: [
+            AboutCellData(image: "staroflife.fill", color: .yellow, title: "What You Can Do?", previewBody: "Same text Lots of preview text and stuff", body: "Lots more text about stuff"),
+            AboutCellData(image: "staroflife.fill", color: .yellow, title: "What You Can Do?", previewBody: "Same text Lots of preview text and stuff", body: "Lots more text about stuff"),
+            AboutCellData(image: "staroflife.fill", color: .yellow, title: "What You Can Do?", previewBody: "Same text Lots of preview text and stuff", body: "Lots more text about stuff"),
+            AboutCellData(image: "staroflife.fill", color: .yellow, title: "What You Can Do?", previewBody: "Same text Lots of preview text and stuff", body: "Lots more text about stuff")]),
+        MainCellDdata(image: "list.bullet.indent", color: .purple, title: "COVID-19 Testing item 3", body: "the virusand its symptoms", aboutCellData: [
+            AboutCellData(image: "staroflife.fill", color: .yellow, title: "What is COVID-19?", previewBody: "Lots of preview text and stuff", body: "Lots more text about stuff"),
+            AboutCellData(image: "staroflife.fill", color: .yellow, title: "What is COVID-19?", previewBody: "Lots of preview text and stuff", body: "Lots more text about stuff"),
+            AboutCellData(image: "staroflife.fill", color: .yellow, title: "What is COVID-19?", previewBody: "Lots of preview text and stuff", body: "Lots more text about stuff")]),
+        MainCellDdata(image: "app.fill", color: .orange, title: "COVID-19 Testing item 4", body: "the virusand its symptoms", aboutCellData: [
+            AboutCellData(image: "staroflife.fill", color: .yellow, title: "What is COVID-19?", previewBody: "Lots of preview text and stuff", body: "Lots more text about stuff"),
+            AboutCellData(image: "staroflife.fill", color: .yellow, title: "What is COVID-19?", previewBody: "Lots of preview text and stuff", body: "Lots more text about stuff")])
     ]
     
     var body: some View {
